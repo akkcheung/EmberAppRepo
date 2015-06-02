@@ -1,0 +1,13 @@
+My Lists
+<br/>
+
+{{input type="text" value=newListTitle action="createList" placeholder="New List Title" }}
+
+<ul>
+  {{#each list in model}}
+    <li>{{#link-to "lists.show" list}}{{list.title}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+<br/>
+{{outlet}}

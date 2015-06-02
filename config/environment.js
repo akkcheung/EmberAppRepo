@@ -40,7 +40,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    //2015.06.02
+    ENV.baseURL = '/extending-todomvc-dist/';
   }
 
   return ENV;

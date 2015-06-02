@@ -1,0 +1,10 @@
+{{#if isEditing}}
+  <!-- {{input type="text" value=model.title focus-out="updateTitle" insert-newline="updateTitle"}} -->
+  {{edit-title type="text" value=model.title focus-out="updateTitle" insert-newline="updateTitle"}}
+{{else}}
+  {{model.title}}
+  <a href="#" {{action "editTitle"}}>Edit {{fa-icon "edit"}}</a>
+{{/if}}
+
+<br/>
+<a href="#" {{action "deleteList"}}>Delete {{fa-icon "trash"}}</a>
